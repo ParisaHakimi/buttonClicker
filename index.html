@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&family=Rubik:wght@300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Profile page</title>
+  </head>
+  <body>
+    <!-- header and navbar -->
+    <div class="header">
+      <div class="nav">
+        <h1 class="nav-title">Dojonary</h1>
+        <form>
+          <input type="text" placeholder="Search" />
+        </form>
+        <button class="btn" onclick="logOut(this)">Login</button>
+      </div>
+    </div>
+    <!-- body section -->
+    <div class="body-container">
+      <!-- main content -->
+      <div class="main-section-container">
+        <div class="word-meaning-box">
+          <div class="word-column">
+            <h2><strong>ninja</strong></h2>
+            <h4><em>noun</em></h4>
+            <h5>Plural: ninjas</h5>
+            <button
+              class="like-btn"
+              onclick="alert('This page says Ninja was liked')"
+            >
+              13 likes
+            </button>
+          </div>
+          <p class="meaning">
+            A practitioner skilled in the <a href="#">Japanese</a> art of
+            <a href="#">ninjutsu</a>
+          </p>
+        </div>
+        <div class="word-meaning-box">
+          <div class="word-column">
+            <h2><strong>ninja</strong></h2>
+            <h4><em>noun</em></h4>
+
+            <h5>Plural: ninjas</h5>
+            <button class="like-btn">37 likes</button>
+          </div>
+          <p class="meaning">
+            A <a href="#">programmer</a> who breaks down problems with
+            <a href="#">zen</a>-like focus
+          </p>
+        </div>
+      </div>
+      <!-- sidbar -->
+      <div class="side-container">
+        <p>Dojonary is defined by <span>You</span></p>
+        <button class="add-definition" onclick="remove(this)">
+          Add Definition
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
